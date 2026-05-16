@@ -1,4 +1,4 @@
-### A Comprehensive Analysis of Product and Outlet Drivers
+### A Comprehensive Analysis of Product and Outlet
 **Author:** Moamen ayyad
 
 ## Business problem:
