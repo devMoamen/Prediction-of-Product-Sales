@@ -15,12 +15,12 @@ The dataset consists of 8,523 observations and 12 features, including product at
 ## Results
 
 ### Correlation of Features vs. Sales
-![Correlation Heatmap](https://github.com/devMoamen/Prediction-of-Product-Sales/blob/main/correlation_heatmap.png?raw=1)
+[![Correlation Heatmap](https://github.com/devMoamen/Prediction-of-Product-Sales/blob/main/correlation_heatmap.png?raw=1)](https://github.com/devMoamen/Prediction-of-Product-Sales/blob/main/feature_vs_target.png)
 
 Maximum Retail Price (`Item_MRP`) shows the strongest positive relationship with sales (r = 0.57), suggesting that pricing strategy is the primary lever for revenue.
 
 ### Actual vs. Predicted Performance
-![Actual vs Predicted](https://github.com/devMoamen/Prediction-of-Product-Sales/blob/main/actual_vs_predicted.png?raw=1)
+[heat_map.png](https://github.com/devMoamen/Prediction-of-Product-Sales/blob/main/heat_map.png)
 
 ## Model
 The final model is a **Tuned Random Forest Regressor** optimized via GridSearchCV.
