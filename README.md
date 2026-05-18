@@ -32,6 +32,27 @@ The final model is a **Tuned Random Forest Regressor** optimized via GridSearchC
 
 The model explains approximately 60.4% of the variance in sales. With an average error (MAE) of $727.90, the model provides a reliable baseline for monthly inventory planning, significantly reducing the risk of massive overstock or understock scenarios.
 
+### Model Interpretability
+Extract coefficients from the Linear Regression model and Feature Importances from the Random Forest model to understand what drives sales.
+
+## Linear Regression Coefficients
+
+![linear_regression_coefficients.png](https://github.com/devMoamen/Prediction-of-Product-Sales/blob/main/linear_regression_coefficients.png)
+
+### Interpretation of Linear Regression Coefficients
+1. **Outlet_Type_Supermarket Type3**: This has a large positive coefficient, meaning being this store type significantly increases predicted sales.
+2. **Item_MRP**: A positive coefficient indicates that for every unit increase in Maximum Retail Price, sales increase by the coefficient amount.
+3. **Outlet_Identifier_OUT027**: Since this store is a Supermarket Type 3, it shows a strong positive impact on sales.
+
+## Random Forest Feature Importances
+![random_forest_feature_importance.png](https://github.com/devMoamen/Prediction-of-Product-Sales/blob/main/random_forest_feature_importance.png)
+
+### Interpretation of Tree-Based Feature Importances
+1. **Item_MRP**: By far the most important feature, determining the price bracket of the item.
+2. **Outlet_Type_Grocery Store**: Crucial for distinguishing low-volume outlets from supermarkets.
+3. **Item_Visibility**: Although it had low correlation, the tree model uses it significantly to partition data.
+4. **Outlet_Type_Supermarket Type3**: Confirms that this specific store type is a major differentiator in sales volume.
+5. **Item_Weight**: Used by the model to further refine predictions within categories.
 ## Recommendations:
 1. **Focus on High-Tier Pricing:** Since MRP is a high driver, emphasize premium product tiers in high-performing locations.
 2. **Scale Supermarket Type 3:** This outlet type showed the highest average sales; future expansions should mirror the operational structure of these specific stores.
